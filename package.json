@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predev": "npm run typegen",
-    "prebuild": "npm run typegen",
+    "prebuild": "if [ \"$VERCEL\" != \"1\" ]; then npm run typegen; fi",
     "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
   },
   "packageManager": "npm@10.5.2",
