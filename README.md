@@ -4,6 +4,7 @@
   <img src="https://www.markaustria.com/ycdirectory.png" alt="YC Directory" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+
 </div>
 
 ## 🌐 Live Site
@@ -14,13 +15,11 @@
 
 ## 📝 Description
 
-Welcome to YC Directory! A modern full-stack Next.js application with real-time updates.
-
-I built this project to demonstrate the latest Next.js features while providing a platform for users to share and discover startup ideas.
-
-This application solves the challenge of creating a responsive platform with proper authentication flow, real-time content updates, and optimized rendering strategies while maintaining excellent performance and SEO benefits.
+Welcome to YC Directory! A modern full-stack Next.js application designed as a pitching platform for users to share and discover startup ideas.
 
 YC Directory allows users to create, share, and discover startup ideas with real-time updates. The application features GitHub authentication, content management via Sanity, and implements advanced rendering strategies like Partial Pre-Rendering (PPR).
+
+This application solves the challenge of creating a responsive platform with proper authentication flow, real-time content updates, and optimized rendering strategies while maintaining excellent performance and SEO benefits.
 
 **Technologies Used**: Next.js, React, TypeScript, Tailwind CSS, Shadcn UI, NextAuth, Sanity, Sentry, Zod
 
@@ -140,4 +139,5 @@ Special thanks to JSM for the inspiration and guidance on this project.
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+
 </div>
