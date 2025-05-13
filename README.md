@@ -1,116 +1,143 @@
-Here's a **README.md** file for your **YC Directory Clone** project. It provides an overview, the tech stack, and feature explanations. Let me know if you need any modifications!
+# YC Directory
 
----
+<div align="center">
+  <img src="https://www.markaustria.com/ycdirectory.png" alt="YC Directory" />
 
-### `README.md`
+[![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+</div>
 
-```md
-# YC Directory Clone  
+## 🌐 Live Site
 
-A **YC Directory Clone** built using Next.js 15, Sanity, and modern full-stack technologies. This application allows users to browse and submit startups, view detailed startup profiles, and interact with real-time data updates.  
+🚀 Here is a working live site: [ycdirectory.markaustria.com](https://ycdirectory.markaustria.com/)
 
-## 🚀 Features  
+🗒️ Check out the case study here: [markaustria.com/ycdirectory](https://www.markaustria.com/ycdirectory)
 
-### 🌍 Startup Listing  
-- Displays a list of startups dynamically fetched from **Sanity CMS**.  
-- Real-time updates: New startups appear instantly without page refresh.  
-- Search and filter functionality based on startup name, category, or author.  
+## 📝 Description
 
-### 🏗️ Startup Details  
-- Each startup has a dedicated profile page with an **image, description, founder details, and pitch**.  
-- Data is **pre-rendered using Next.js 15’s advanced rendering strategies** for optimal performance.  
+Welcome to YC Directory! A modern full-stack Next.js application with real-time updates.
 
-### 🔐 Authentication  
-- OAuth-based authentication with **NextAuth.js**.  
-- Users can sign in with Google and access personalized content.  
+I built this project to demonstrate the latest Next.js features while providing a platform for users to share and discover startup ideas.
 
-### ✏️ Startup Submission  
-- Users can submit their own startups via a form powered by **React Server Actions**.  
-- Rich text editor for startup pitches.  
-- Real-time validation and feedback using **useActionState** hook.  
+This application solves the challenge of creating a responsive platform with proper authentication flow, real-time content updates, and optimized rendering strategies while maintaining excellent performance and SEO benefits.
 
-### 🖥️ Dynamic & Static Rendering  
-- Next.js optimizations:  
-  - **Server Components** for direct database interaction.  
-  - **Static & Dynamic Rendering Hybrid** for performance.  
-  - Suspense boundaries for handling async operations smoothly.  
+YC Directory allows users to create, share, and discover startup ideas with real-time updates. The application features GitHub authentication, content management via Sanity, and implements advanced rendering strategies like Partial Pre-Rendering (PPR).
 
-### 📊 User Profiles  
-- Dynamic profile pages for users, showing their submitted startups.  
-- Server-side fetching for optimized data loading.  
+**Technologies Used**: Next.js, React, TypeScript, Tailwind CSS, Shadcn UI, NextAuth, Sanity, Sentry, Zod
 
-### 🛠️ Error Handling & Monitoring  
-- Global and route-specific **error boundaries** to catch and display errors gracefully.  
-- Integrated with **Sentry** for real-time monitoring and debugging.  
+## 📖 Table of Contents
 
-### 🚢 Deployment & Performance  
-- Fully deployed on **Vercel** for seamless scalability.  
-- Optimized image loading using Next.js **Image component**.  
+- [Features](#-features)
+- [Installation](#%EF%B8%8F-setup-project)
+- [How to Contribute](#%EF%B8%8F-how-to-contribute)
+- [Bug / Feature Request](#-bug--feature-request)
+- [Future Enhancements](#-future-enhancements)
+- [Acknowledgements](#-acknowledgements)
 
-## 🛠️ Tech Stack  
+## ✨ Features
 
-| Technology     | Purpose |
-|---------------|---------|
-| **Next.js 15** | Full-stack framework |
-| **React 19** | UI Components & Server Actions |
-| **Sanity CMS** | Headless CMS for startups database |
-| **NextAuth.js** | Authentication (Google OAuth) |
-| **Tailwind CSS** | Styling |
-| **TypeScript** | Type safety |
-| **Vercel** | Deployment |
-| **Sentry** | Error monitoring |
+- **Partial Pre-Rendering Implementation**: Combines static and dynamic rendering within the same page. Static content like startup details are cached while dynamic elements like view counters are rendered server-side in real-time.
 
-## 📦 Project Structure  
+- **Real-Time Content Updates**: Integrated Sanity's live content API to deliver real-time updates without page refreshes. When users submit new startups, they appear instantly on the homepage for all users.
 
-```
-/yc-directory-clone  
-│── /app           # Main application folder  
-│── /components    # Reusable UI components  
-│── /lib           # Utility functions & API clients  
-│── /public        # Static assets  
-│── /sanity        # CMS configurations  
-│── /styles        # Global styles  
-│── /types         # TypeScript types  
-│── /pages         # Next.js route pages  
-│── next.config.js # Next.js configurations  
-│── tailwind.config.js # Tailwind CSS setup  
-│── .env.local     # Environment variables  
-│── package.json   # Dependencies & scripts  
-│── README.md      # Project documentation
-```
+- **Advanced Form Handling with React**: Leveraged React's new useActionState hook and Next.js server actions to create a robust form submission system with built-in validation using Zod.
 
-## 🔧 Installation & Setup  
+- **GitHub Authentication**: Implemented custom callbacks in the NextAuth configuration to create or fetch Sanity author documents upon successful GitHub authentication.
 
-1. **Clone the repository**  
-   ```sh
-   git clone https://github.com/yourusername/yc-directory-clone.git  
-   cd yc-directory-clone  
+## 🛠️ Setup Project
+
+To get this project up and running in your development environment, follow these step-by-step instructions.
+
+### 🍴 Prerequisites
+
+We need to install or make sure that these tools are pre-installed on your machine:
+
+- [Git](https://git-scm.com/downloads)
+- [NodeJS](https://nodejs.org/en/download/)
+- [NPM](https://docs.npmjs.com/getting-started/installing-node)
+- [Sanity CLI](https://www.sanity.io/docs/getting-started-with-sanity-cli) (optional, for content management)
+
+### 🚀 Install Project
+
+1. Clone the Repository
+
+   ```bash
+   git clone https://github.com/mjaus29/ycdirectory.git
    ```
 
-2. **Install dependencies**
-   ```sh
-   npm install  
+2. Navigate into the project directory
+
+   ```bash
+   cd ycdirectory
    ```
 
-3. **Set up environment variables**
-    - Create a `.env.local` file and configure required API keys.
+3. Install dependencies
 
-4. **Run the development server**
-   ```sh
-   npm run dev  
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-5. **Deploy to Vercel**
-   ```sh
-   vercel  
+   ```bash
+   npm install
    ```
 
-## 📜 License
+4. Set up environment variables
 
-This project is licensed under the MIT License.
+   - Create a .env.local file in the root directory with the following variables:
 
----
+   ```
+   AUTH_SECRET="your_auth_secret"
+   AUTH_GITHUB_ID="your_github_oauth_id"
+   AUTH_GITHUB_SECRET="your_github_oauth_secret"
+   NEXT_PUBLIC_SANITY_DATASET="production"
+   NEXT_PUBLIC_SANITY_PROJECT_ID="your_sanity_project_id"
+   NEXT_PUBLIC_SANITY_API_VERSION="your_sanity_api_version"
+   SANITY_WRITE_TOKEN="your_sanity_write_token"
+   ```
 
-Let me know if you need any modifications! 🚀
-```
+5. Start the application
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your web browser and navigate to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to see the project running.
+
+7. Test the application
+
+   Run the test suite to ensure everything is working as expected.
+
+   ```bash
+   npm test
+   ```
+
+## ⚒️ How to Contribute
+
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
+### 📩 Bug / Feature Request
+
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/mjaus29/ycdirectory/issues/new) by including your search query and the expected result.
+
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/mjaus29/ycdirectory/issues/new). Please include sample queries and their corresponding results.
+
+### ✅ Future Enhancements
+
+- [ ] Implement form field persistence when validation fails to improve user experience
+- [ ] Add commenting and voting functionality for startup pitches
+- [ ] Integrate email notifications for new startup submissions
+- [ ] Implement advanced analytics to track user engagement and startup popularity
+
+### 📚 Acknowledgements
+
+Special thanks to JSM for the inspiration and guidance on this project.
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+</div>
